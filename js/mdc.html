@@ -1,0 +1,15 @@
+<script>
+var a = parseInt(prompt("Digite o termo A"));
+var b = parseInt(prompt("Digite o termo B"));
+function mdc (a, b){
+    while(b != 0){
+        var i = b;
+        b = a % b;
+        a = i;
+    }
+    return a;
+}
+
+document.write("MDC igual a: ");
+document.write(mdc(a, b));
+</script>

@@ -1,0 +1,23 @@
+<script>
+var n = parseInt(prompt("Digite um número"));
+var divisores = 0;
+
+
+if (n > 0){
+    for(var i = 1; i <= n; i++){
+        if (n % i == 0){
+            divisores++;
+        }
+    }
+    if (divisores == 2){
+            document.write("Número primo!");
+        }
+        else {
+            document.write("Não é um número primo!");
+        }
+}
+else {
+    console.log ("Número negativo ou igual a zero");
+}
+
+</script>
